@@ -202,8 +202,12 @@ h1 em { color: var(--red); font-style: normal; }
 .venture-services { background:#ece9df; }.venture-map { background:#ddd3b8; }
 .venture-site-preview { height:160px; margin:30px 0 26px; overflow:hidden; border:1px solid var(--ink); background:var(--ink); }
 .venture-site-preview img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
-.venture-map-preview { height:160px; margin:30px 0 26px; overflow:hidden; border:1px solid var(--ink); background:var(--ink); }
-.venture-map-preview img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+.venture-tba-preview { height:160px; margin:30px 0 26px; display:grid; grid-template-columns:1fr auto; grid-template-rows:auto 1fr auto; gap:8px; padding:18px; overflow:hidden; color:var(--paper); background:var(--ink); border:1px solid var(--ink); }
+.venture-tba-preview span,.venture-tba-preview small { font-size:7px; letter-spacing:.12em; }
+.venture-tba-preview span { grid-column:1 / -1; }
+.venture-tba-preview strong { grid-column:1 / -1; align-self:center; font:500 clamp(27px,3.3vw,48px)/.86 "Oswald"; letter-spacing:-.025em; }
+.venture-tba-preview small { grid-column:1 / -1; align-self:end; opacity:.62; }
+.venture-tba-status { margin-top:auto !important; padding-top:18px; border-top:1px solid var(--ink); font-size:8px !important; letter-spacing:.06em; }
 .venture-card-index { display:flex; justify-content:space-between; padding-bottom:14px; border-bottom:1px solid var(--ink); font-size:8px; }
 .venture-card h3 { font-size:clamp(48px,5vw,78px); line-height:.95; }
 .venture-tagline { margin:14px 0 0 !important; font:500 clamp(18px,2vw,28px)/1.15 "Oswald" !important; text-transform:uppercase; max-width:520px; }
