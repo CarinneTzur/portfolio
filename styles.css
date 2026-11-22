@@ -265,6 +265,22 @@ h1 em { color: var(--red); font-style: normal; }
 .photo-card:focus-visible { z-index:21; outline:0; transform:translateY(-26px) rotate(0) scale(1.06); box-shadow:15px 20px 0 rgba(0,0,0,.38); }
 .photo-card:focus-visible::after { content:""; position:absolute; inset:5px; border:3px solid var(--red); pointer-events:none; }
 
+/* Readable body copy, independent of the display heading scale. */
+.section-heading.split > p,
+.log-list p,
+.project-viewer-hero > p:last-child,
+.venture-card > p,
+.stack-intro { font-size:16px; }
+.stack-grid p,
+.venture-intro { font-size:16px; }
+.project-viewer-facts p,
+.venture-card ul { font-size:14px; }
+.status-line,
+.contact-footer,
+.venture-footer { font-size:12px; }
+.project-viewer-actions a,
+.venture-card > a { font-size:11px; }
+
 @media (max-width: 760px) {
   .site-header, main { width: calc(100% - 8px); }
   .site-header { margin-top: 4px; justify-content: space-between; }
