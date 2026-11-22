@@ -334,6 +334,32 @@ h1 em { color: var(--red); font-style: normal; }
   .photo-card:hover,
   .photo-card:focus-visible { transform:translateY(-16px) rotate(0) scale(1.03); }
   .sun { width: 80vw; }.arch-one { width: 38vw; }.world-label { display: none; }
+
+  /* Mobile-friendly refinements: smaller type, no clipped resume header, safe-area room */
+  .resume-sheet { left: 4%; width: 92%; }
+  .resume-sheet header { flex-wrap: wrap; gap: 8px 15px; }
+  .resume-sheet header p { margin-top: 2px; text-align: left; }
+  .resume-sheet header h2 { font-size: 34px; }
+  .resume-summary { font-size: 12.5px; }
+  .resume-row { grid-template-columns: 60px 1fr; gap: 10px; }
+  .resume-row time { font-size: 9.5px; }
+  .resume-row p { font-size: 11.5px; }
+  .resume-row strong { font-size: 12px; }
+  .resume-skill-groups p,
+  .resume-languages,
+  .resume-contact { font-size: 11px; }
+  .resume-project-grid p { font-size: 10.5px; }
+  .resume-skill-groups strong,
+  .resume-project-grid strong { font-size: 11px; }
+  .hero h1 { font-size: clamp(46px, 13.5vw, 68px); }
+  h1 { font-size: clamp(46px, 15vw, 76px); }
+  .section-heading h2,
+  .contact-section h2 { font-size: clamp(38px, 11vw, 56px); }
+  .log-list h3 { font-size: 21px; }
+  .project-viewer-hero h3 { font-size: clamp(36px, 11vw, 54px); }
+  .venture-card h3 { font-size: clamp(36px, 11vw, 54px); }
+  .venture-tagline { font-size: 17px !important; }
+  .contact-footer { padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px)); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
